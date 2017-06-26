@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--1,lang="zh-cn"-->
+<head lang="zh-cn">
+  <meta charset="UTF-8">
+  <!--2,viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!--3,x-ua-compatible-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4引入两个兼容文件-->
+  <!--[if it IE 9]>
+  <script src="../../resources/js/html5shiv.min.js"></script>
+  <script src="../../resources/js/respond.min.js"></script>
+  <![endif]-->
+  <!--6引入bootstrap.css-->
+  <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/court_attend.css">
+</head>
+<body>
+  <header id="main_header"></header>
+  <section id="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="thumbnail">
+            <div id="video">
+              <!--<video src="res/Preview%20new.mp4"></video>-->
+            </div>
+
+            <div class="caption">
+              <h3>案件信息</h3>
+              <div class="row">
+                <div class="col-xs-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <b>案号：</b>
+                      <span>浙1158案号</span>
+                    </li>
+                    <li>
+                      <b>被讯问人：</b>
+                      <span>王磊</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <b>案由：</b>
+                      <span>盗用专利纠纷</span>
+                    </li>
+                    <li>
+                      <b>讯问人：</b>
+                      <span>李广</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <b>审讯地点：</b>
+                      <span>某某法庭</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <b>审讯状态：</b>
+                      <span>待召开</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>消息通讯</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="list-unstyled">
+                <li>
+                  <h3 class="text-center">10:00:00</h3>
+                  <div class="media">
+                    <div class="media-left media-middle">
+                      <a href="#">
+                        <img class="media-object" src="img/developer.png">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4>
+                        可以开庭了吗？
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <h3 style="text-align: center">10:00:00</h3>
+                  <div class="media">
+                    <div class="media-body">
+                      <span>
+                        可以开庭了吗？
+                      </span>
+                    </div>
+                    <div class="media-right media-middle">
+                      <a href="#">
+                        <img class="media-object" src="img/developer.png">
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+            <div class="panel-footer">
+              <textarea name="msginput" id="msginput" rows="4" class="form-control"></textarea>
+              <br>
+              <div class="text-right">
+                <button class="btn btn-primary">发送</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--引入jquery,bootstrap js-->
+  <script src="../../resources/js/jquery-1.11.3.js"></script>
+  <script src="../../resources/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
