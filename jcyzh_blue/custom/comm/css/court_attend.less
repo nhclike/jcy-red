@@ -1,3 +1,63 @@
+/*头部样式*/
+.navbar-style-custom {
+  @bg_color:#329DFF;
+  background:@bg_color;
+  .navbar-left{
+    img{
+      width: 74px;
+      margin-left: 30px
+    }
+    span{
+      color: #fff;
+      font-size: 42px;
+      margin-left: 10px;
+      position: relative;
+      top:5px;
+    }
+  }
+  #nav_logo{
+    .navbar-left{
+      margin-left:40px;
+      a{
+        display: block;
+        width: 90px;
+        text-align: center;
+        margin:5px 10px;
+        padding: 5px;
+        color:#fff;
+        img{
+          margin: 0 !important;
+          width:50px;
+        }
+        h3{
+          color: #fff;
+          font-size: 20px;
+          margin: 5px auto;
+        }
+        &:hover{
+          color:#fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .navbar-right{
+      a{
+        display: block;
+        overflow: hidden;
+        background-color:@bg_color;
+        color:#fff;
+        text-decoration: none;
+        margin: 25px 20px 25px 0;
+        vertical-align: middle;
+        h1{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+/*主体内容样式*/
 #section{
   @bg_color:#F0F8FF;
   @text-color:#329DFF;
