@@ -61,13 +61,14 @@
 #section{
   @bg_color:#F0F8FF;
   @text-color:#329DFF;
-  @msg_bg_color:#D9F4FE;
+  @msg_left_color:#D9F4FE;
+  @msg_right_color:#329DFF;
   background-color:@bg_color;
   padding-top:114px;
   .container{
     width: 100%;
     .row{
-      padding: 3rem;
+      padding: 2rem;
       .col-xs-8{
         .thumbnail{
           box-shadow: 5px 5px 5px #ddd;
@@ -75,11 +76,34 @@
           text-align:center;
           #video{
             width: 100%;
-            height: 580px;
+            min-height: 575px;
             background-color: #000;
+            position: relative;
+            float: left;
+            div{
+              padding: 10px;
+              p{
+                padding: 5px;
+                background-color:rgba(255,255,255,.3);
+                border-radius: 5px;
+                width: 10%;
+                margin: 0  5px;
+                img{
+                  margin: 5px auto;
+                }
+                a{
+                  color: #fff;
+                  &：hover{
+                    color:#fff;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
           }
           .caption{
             font-size:24px;
+            clear: both;
             h3{
               text-align: left;
               color:@text-color;
@@ -114,13 +138,74 @@
             background-color: #fff;
           }
           .panel-body{
-            height: 540px;
-            span{
-              display: block;
-              float: right;
-              font-size: 20px;
-              background-color: #ddd;
-              padding: 5px;
+            padding: 0;
+            overflow: hidden;
+            #chat-list{
+              height: 540px;
+              margin: 15px;
+              li{
+                display: inline;
+                .media{
+                  margin: 8px 0;
+                  overflow: hidden;
+                  span.left{
+                    display: block;
+                    position: relative;
+                    float: left;
+                    margin-left: 15px;
+                    b{
+                      font-weight: normal;
+                      font-size: 20px;
+                      display: block;
+                      padding: 5px;
+                      background-color: @msg_left_color;
+                      border-radius: 5px;
+                      color:#000;
+                      &:hover{
+                        text-decoration: none;
+                      }
+                    }
+                    i{
+                      position:absolute;
+                      width:0;
+                      height:0;
+                      border-width:10px 15px 10px 0;
+                      border-style:solid;
+                      border-color:transparent @msg_left_color transparent transparent ;
+                      left:-15px;
+                      top:10px
+                    }
+                  }
+                  span.right{
+                    display: block;
+                    position: relative;
+                    float: right;
+                    margin-right: 15px;
+                    b{
+                      font-weight: normal;
+                      font-size: 20px;
+                      display: block;
+                      padding: 5px;
+                      background-color:@msg_right_color;
+                      border-radius: 5px;
+                      color:#fff;
+                      &:hover{
+                        text-decoration: none;
+                      }
+                    }
+                    i{
+                      position:absolute;
+                      width:0;
+                      height:0;
+                      border-width:10px 0 10px 15px;
+                      border-style:solid;
+                      border-color:transparent transparent transparent @msg_right_color;
+                      right:-15px;
+                      top:10px
+                    }
+                  }
+                }
+              }
             }
           }
           .panel-footer{

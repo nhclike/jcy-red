@@ -58,7 +58,7 @@
   width: 100%;
 }
 #section .container .row {
-  padding: 3rem;
+  padding: 2rem;
 }
 #section .container .row .col-xs-8 .thumbnail {
   box-shadow: 5px 5px 5px #ddd;
@@ -67,11 +67,34 @@
 }
 #section .container .row .col-xs-8 .thumbnail #video {
   width: 100%;
-  height: 580px;
+  min-height: 575px;
   background-color: #000;
+  position: relative;
+  float: left;
+}
+#section .container .row .col-xs-8 .thumbnail #video div {
+  padding: 10px;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  width: 10%;
+  margin: 0  5px;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p img {
+  margin: 5px auto;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p a {
+  color: #fff;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p a：hover {
+  color: #fff;
+  text-decoration: none;
 }
 #section .container .row .col-xs-8 .thumbnail .caption {
   font-size: 24px;
+  clear: both;
 }
 #section .container .row .col-xs-8 .thumbnail .caption h3 {
   text-align: left;
@@ -100,14 +123,75 @@
   background-color: #fff;
 }
 #section .container .row .col-xs-4 .panel .panel-body {
-  height: 540px;
+  padding: 0;
+  overflow: hidden;
 }
-#section .container .row .col-xs-4 .panel .panel-body span {
+#section .container .row .col-xs-4 .panel .panel-body #chat-list {
+  height: 540px;
+  margin: 15px;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li {
+  display: inline;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media {
+  margin: 8px 0;
+  overflow: hidden;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.left {
   display: block;
-  float: right;
+  position: relative;
+  float: left;
+  margin-left: 15px;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.left b {
+  font-weight: normal;
   font-size: 20px;
-  background-color: #ddd;
+  display: block;
   padding: 5px;
+  background-color: #D9F4FE;
+  border-radius: 5px;
+  color: #000;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.left b:hover {
+  text-decoration: none;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.left i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px 15px 10px 0;
+  border-style: solid;
+  border-color: transparent #D9F4FE transparent transparent;
+  left: -15px;
+  top: 10px;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.right {
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: 15px;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.right b {
+  font-weight: normal;
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  background-color: #329DFF;
+  border-radius: 5px;
+  color: #fff;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.right b:hover {
+  text-decoration: none;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.right i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px 0 10px 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent #329DFF;
+  right: -15px;
+  top: 10px;
 }
 #section .container .row .col-xs-4 .panel .panel-footer {
   padding: 0;
